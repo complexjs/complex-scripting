@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *
  */
@@ -29,5 +27,3 @@ class cxScriptComponent extends cxComponent
 
     }
 }
-
-module.exports = cxScriptComponent;

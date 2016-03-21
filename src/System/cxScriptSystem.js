@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *
  */
@@ -30,5 +28,3 @@ class cxScriptSystem extends cxEntitySystem
         script.update();
     }
 }
-
-module.exports = cxScriptSystem;
