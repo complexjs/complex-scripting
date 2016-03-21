@@ -1,0 +1,15 @@
+{
+    "version" : "0.0.1",
+    "author": {
+        "name": "Fabio Gianini"
+    },
+    "description": "Scriptingmodule for ComplexJS",
+    "keywords" : ["engine", "game", "gamedev", "development", "html5", "gameengine", "indie", "component", "entity", "system"],
+
+    "repository": {
+        "url": "https://github.com/faebeee/complex-scripting"
+    },
+    "dependencies": {
+    },
+    "engine": "^0.10.0"
+}
