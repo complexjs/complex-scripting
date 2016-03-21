@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  *
  */
@@ -50,3 +52,5 @@ class cxScript
 
     }
 }
+
+module.exports = cxScript;

@@ -1,9 +1,10 @@
 {
-    "version" : "0.0.1",
+    "version" : "0.5.0",
     "name": "complex-scripting",
     "author": {
         "name": "Fabio Gianini"
     },
+    "main" : "module.js",
     "description": "Scriptingmodule for ComplexJS",
     "keywords" : ["engine", "game", "gamedev", "development", "html5", "gameengine", "indie", "component", "entity", "system"],
 
