@@ -1,5 +1,6 @@
 {
     "version" : "0.0.1",
+    "name": "complex-scripting",
     "author": {
         "name": "Fabio Gianini"
     },
