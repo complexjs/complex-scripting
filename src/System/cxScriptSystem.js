@@ -1,5 +1,5 @@
 /**
- *
+ * Version %%VERSION%%
  */
 class cxScriptSystem extends cxEntitySystem
 {

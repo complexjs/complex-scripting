@@ -1,16 +1,30 @@
 {
-    "version" : "0.5.1",
-    "name": "complex-scripting",
-    "author": {
-        "name": "Fabio Gianini"
-    },
-    "description": "Scriptingmodule for ComplexJS",
-    "keywords" : ["engine", "game", "gamedev", "development", "html5", "gameengine", "indie", "component", "entity", "system"],
-
-    "repository": {
-        "url": "https://github.com/faebeee/complex-scripting"
-    },
-    "dependencies": {
-    },
-    "engine": "^0.10.0"
+  "version": "0.5.3",
+  "name": "complex-scripting",
+  "author": {
+    "name": "Fabio Gianini"
+  },
+  "description": "Scriptingmodule for ComplexJS",
+  "keywords": [
+    "engine",
+    "game",
+    "gamedev",
+    "development",
+    "html5",
+    "gameengine",
+    "indie",
+    "component",
+    "entity",
+    "system"
+  ],
+  "repository": {
+    "url": "https://github.com/faebeee/complex-scripting"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": ">= x",
+    "gulp-concat": ">= x",
+    "gulp-version-injector": "^1.0.0"
+  },
+  "engine": "^0.10.0"
 }
