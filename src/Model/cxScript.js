@@ -19,6 +19,12 @@ class cxScript
          * @type {String}
          */
         this.tag = "cx.script";
+
+        /**
+         * [isSetUp description]
+         * @type {Boolean}
+         */
+        this.isSetUp = false;
     }
 
     /**
@@ -32,6 +38,7 @@ class cxScript
         this.world = world;
 
         this.onSetup();
+        this.isSetUp = true;
     }
 
     /**
