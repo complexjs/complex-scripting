@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "1.0.0",
   "name": "complex-scripting",
   "author": {
     "name": "Fabio Gianini"
@@ -18,13 +18,12 @@
     "system"
   ],
   "repository": {
-    "url": "https://github.com/faebeee/complex-scripting"
+    "url": "https://github.com/complexjs/complex-scripting"
   },
   "dependencies": {},
-  "devDependencies": {
-    "gulp": ">= x",
-    "gulp-concat": ">= x",
-    "gulp-version-injector": "^1.0.0"
+  "dependencies": {
+      "complex-engine-component" : "^1.0.0",
+      "complex-engine-system" : "^1.0.0"
   },
   "engine": "^0.10.0"
 }

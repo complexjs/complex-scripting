@@ -1,3 +1,7 @@
+'use strict';
+
+var cxComponent = require('complex-engine-component');
+
 /**
  *
  */
@@ -27,3 +31,5 @@ class cxScriptComponent extends cxComponent
 
     }
 }
+
+module.exports = cxScriptComponent;

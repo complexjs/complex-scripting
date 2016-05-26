@@ -1,3 +1,9 @@
+'use strict';
+var cxEntitySystem = require('complex-engine-system').cxEntitySystem;
+
+/**
+ *
+ */
 class cxScriptCollectionSystem extends cxEntitySystem
 {
     constructor ()
@@ -33,3 +39,5 @@ class cxScriptCollectionSystem extends cxEntitySystem
         }
     }
 }
+
+module.exports = cxScriptCollectionSystem;

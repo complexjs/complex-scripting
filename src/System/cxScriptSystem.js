@@ -1,3 +1,9 @@
+'use strict';
+var cxEntitySystem = require('complex-engine-system').cxEntitySystem;
+
+/**
+ *
+ */
 class cxScriptSystem extends cxEntitySystem
 {
     constructor ()
@@ -25,3 +31,4 @@ class cxScriptSystem extends cxEntitySystem
         script.update();
     }
 }
+module.exports = cxScriptSystem;
