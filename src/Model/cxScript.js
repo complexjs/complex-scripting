@@ -31,8 +31,8 @@ class cxScript
 
     /**
      * called by the Scriptsystem when script is ready
-     * @param  {cxEntity} entity [description]
-     * @param  {cxWorld} world  [description]
+     * @param  {cxEntity} entity The entity
+     * @param  {cxWorld} world  The world instance
      */
     _setup (entity, world)
     {
@@ -48,7 +48,7 @@ class cxScript
      */
     onSetup ()
     {
-
+        throw 'Method not implemented';
     }
 
     /**
@@ -56,7 +56,7 @@ class cxScript
      */
     update ()
     {
-
+        throw 'Method not implemented';
     }
 }
 

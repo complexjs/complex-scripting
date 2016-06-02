@@ -1,9 +1,10 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "name": "complex-scripting",
   "author": {
     "name": "Fabio Gianini"
   },
+  "main" : "module.js",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
     "engine",
@@ -20,7 +21,10 @@
   "repository": {
     "url": "https://github.com/complexjs/complex-scripting"
   },
-  "dependencies": {},
+  "devDependencies": {
+      "gulp": "^3.9.1",
+      "gulp-jsdoc3": "^0.3.0"
+  },
   "dependencies": {
       "complex-engine-component" : "^1.0.0",
       "complex-engine-system" : "^1.0.0"
