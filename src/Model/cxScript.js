@@ -3,7 +3,7 @@
 /**
  *
  */
-class cxScript
+export default class cxScript
 {
     constructor ()
     {
@@ -59,5 +59,3 @@ class cxScript
         throw 'Method not implemented';
     }
 }
-
-module.exports = cxScript;

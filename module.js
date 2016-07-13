@@ -1,7 +1,8 @@
 'use strict';
+import cxScriptComponent from './src/Component/cxScriptComponent';
+import cxScript from './src/Model/cxScript';
+import cxScriptSystem from './src/System/cxScriptSystem';
 
-module.exports = {
-    'cxScriptComponent' : require('./src/Component/cxScriptComponent'),
-    'cxScript' : require('./src/Model/cxScript'),
-    'cxScriptSystem' : require('./src/System/cxScriptSystem'),
-};
+export cxScriptComponent;
+export cxScript;
+export cxScriptSystem;

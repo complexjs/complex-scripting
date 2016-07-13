@@ -1,11 +1,11 @@
 'use strict';
 
-var cxComponent = require('complex-engine-component');
+import cxComponent from 'complex-engine-component';
 
 /**
  *
  */
-class cxScriptComponent extends cxComponent
+export default class cxScriptComponent extends cxComponent
 {
     /**
      * @param  {cxScript} script [description]
@@ -31,5 +31,3 @@ class cxScriptComponent extends cxComponent
 
     }
 }
-
-module.exports = cxScriptComponent;
