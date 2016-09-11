@@ -1,11 +1,11 @@
 'use strict';
 
-import cxEntitySystem from 'complex-engine-system';
+let cxEntitySystem = require('complex-engine').cxEntitySystem;
 
 /**
  *
  */
-export default class cxScriptSystem extends cxEntitySystem
+module.exports = class cxScriptSystem extends cxEntitySystem
 {
     constructor ()
     {

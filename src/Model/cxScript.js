@@ -3,7 +3,7 @@
 /**
  *
  */
-export default class cxScript
+module.exports = class cxScript
 {
     constructor ()
     {
