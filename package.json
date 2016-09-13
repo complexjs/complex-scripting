@@ -22,7 +22,7 @@
     "url": "https://github.com/complexjs/complex-scripting"
   },
   "dependencies": {
-      "complex-engine" : "^3.2.1",
+      "complex-engine" : "^3.2.1"
   },
   "engine": "^0.10.0"
 }
