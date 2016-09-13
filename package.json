@@ -1,5 +1,5 @@
 {
-  "version": "3.1.1",
+  "version": "3.1.2",
   "name": "complex-scripting",
   "author": {
     "name": "Fabio Gianini"
@@ -22,8 +22,7 @@
     "url": "https://github.com/complexjs/complex-scripting"
   },
   "dependencies": {
-      "complex-engine-component" : "^1.0.0",
-      "complex-engine-system" : "^1.0.0"
+      "complex-engine" : "^3.2.1",
   },
   "engine": "^0.10.0"
 }
