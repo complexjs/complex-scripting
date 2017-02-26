@@ -1,11 +1,11 @@
 'use strict';
 
-let cxEntitySystem = require('complex-engine').cxEntitySystem;
+import {cxEntitySystem} from 'complex-engine';
 
 /**
  *
  */
-module.exports = class cxScriptSystem extends cxEntitySystem
+export default class cxScriptSystem extends cxEntitySystem
 {
     constructor ()
     {
@@ -17,6 +17,8 @@ module.exports = class cxScriptSystem extends cxEntitySystem
     /**
      * @param  {cxEntity} entity
      * @param  {cxComponent[]} components
+     *
+     * Called every tick. Calls the update method of the attached script object
      */
     update (entity, components)
     {

@@ -1,11 +1,11 @@
 'use strict';
 
-let cxComponent = require('complex-engine').cxComponent;
+import {cxComponent} from 'complex-engine';
 
 /**
  *
  */
-module.exports = class cxScriptComponent extends cxComponent
+export default class cxScriptComponent extends cxComponent
 {
     /**
      * @param  {cxScript} script [description]

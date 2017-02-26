@@ -1,10 +1,10 @@
 {
-  "version": "4.0.0",
+  "version": "5.0.0",
   "name": "complex-scripting",
   "author": {
     "name": "Fabio Gianini"
   },
-  "main" : "module.js",
+  "main": "bin/cxScripting.js",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
     "engine",
@@ -21,8 +21,16 @@
   "repository": {
     "url": "https://github.com/complexjs/complex-scripting"
   },
+  "scripts": {
+    "doc": "documentation build src/** -f html -o docs"
+  },
   "dependencies": {
-      "complex-engine" : "^4.0.0"
+    "babel-preset-env": "^1.1.10",
+    "babel-preset-es2015": "^6.22.0",
+    "complex-engine": "^5.0.0",
+    "documentation": "^4.0.0-beta.18",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
   },
   "engine": "^0.10.0"
 }

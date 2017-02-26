@@ -3,7 +3,7 @@
 /**
  *
  */
-module.exports = class cxScript
+export default class cxScript
 {
     constructor ()
     {
@@ -31,6 +31,7 @@ module.exports = class cxScript
 
     /**
      * called by the Scriptsystem when script is ready
+     *
      * @param  {cxEntity} entity The entity
      * @param  {cxWorld} world  The world instance
      */
@@ -44,7 +45,8 @@ module.exports = class cxScript
     }
 
     /**
-     * Method the user can implement. called when script is ready
+     * Method the user can implement.
+     * Called when script is ready.
      */
     onSetup ()
     {
@@ -52,7 +54,7 @@ module.exports = class cxScript
     }
 
     /**
-     * Method can be implemented by user to update it's logic
+     * Method can be implemented by user. Here you can handle all the operations for the entity the component is attached to.
      */
     update ()
     {
