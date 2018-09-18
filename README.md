@@ -2,13 +2,25 @@
 Module to enabled scripted behaviour to entities in the complex-engine
 
 ## install
-npm install complex-scripting
+`npm install complex-scripting --save`
+
+With the npm installation all the classes will be exported as the are named.
+
+If you use the bundeled version
+
+    https://unpkg.com/complex-scripting
+
+then you have all the classes in the exported namespace called  `CxScripting`
+
+
 
 ## Doc
 
-Check out the [api](http://complexjs.github.io/complex-scripting/index.html)
- or the [wiki](https://github.com/complexjs/complex-scripting/wiki)
- 
+Check out the [api](http://complexjs.github.io/complex-scripting/index.html) 
+
+## Example
+Checkout the [Example](./example/app.js)
+
 ## Setup
 
 First we have to load the cxScriptSystem by adding it to the cxWorld instance
@@ -16,25 +28,28 @@ in the desired Scene.
 
 In our scene:
 
-    import {cxScriptSystem} from 'complex-scripting';
+```js
+    import {ScriptSystem} from 'complex-scripting';
 
     ...
     load(){
-        this.world.addSystem( new cxScriptSystem() );
+        this.world.addSystem( new ScriptSystem() );
     }
     ...
+```
     
 Now we can create our custom Script. This is done by creating a new file.
 For now we use `src/Scripts/MyCustomScript.js` and we add this:
 
-    import {cxScript} from 'complex-scripting';
+```js
+    import {Script} from 'complex-scripting';
 
-    export default class MyCustomScript extends cxScript{
+    export default class MyCustomScript extends Script{
         onSetup(){
             // here we can setup all required data like access another component
             //once the scriptcomponent is added to the entity
             
-            this.otherComponent = this.entity.getComponents('my.other.component')[0];
+            this.otherComponent = this.entity.getComponents(MyOtherComponent)[0];
         }
         
         update(){
@@ -43,6 +58,7 @@ For now we use `src/Scripts/MyCustomScript.js` and we add this:
             this.otherComponent.object.rotation.x += 0.01;
         }
     }
+```
    
    
 Now that we have our custom script we have to add the script to the entity.
@@ -51,8 +67,9 @@ This is done by creating a new cxScriptComponent and add out custom script to it
 In out scene:
 
 
-    import {cxEntity} from 'complex-engine';
-    import {cxScriptComponent} from 'complex-scripting';
+```js
+    import {Entity} from 'complex-engine';
+    import {ScriptComponent} from 'complex-scripting';
     import MyScript from './src/Scripts/MyCustomScript.js'
     
     ...
@@ -64,3 +81,4 @@ In out scene:
     }
      
      ...
+```

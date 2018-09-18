@@ -4,7 +4,8 @@
   "author": {
     "name": "Faebeee"
   },
-  "main": "bin/cxScripting.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
     "engine",
@@ -22,17 +23,15 @@
     "url": "https://github.com/complexjs/complex-scripting"
   },
   "scripts": {
-    "doc": "documentation build src/** -f html -o docs"
+    "doc": "npx typedoc --out docs ./src --mode file --readme ./README.md --name CxScripting",
+    "bundle": "npx tsc-bundle --project ./tsconfig.json --importAs complex-engine=cx --exportAs CxScripting"
   },
   "dependencies": {
-    "complex-engine": "^5.0.0"
+    "complex-engine": "^6.0.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.1.10",
-    "babel-preset-es2015": "^6.22.0",
-    "documentation": "^4.0.0-beta.18",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2"
+    "typedoc": "^0.12.0",
+    "typescript-bundle": "^0.8.9"
   },
   "engine": "^0.10.0"
 }

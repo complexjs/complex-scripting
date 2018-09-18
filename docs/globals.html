@@ -63,65 +63,26 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="complex-scripting">complex-scripting</h1>
-				<p>Module to enabled scripted behaviour to entities in the complex-engine</p>
-				<h2 id="install">install</h2>
-				<p>npm install complex-scripting</p>
-				<h2 id="doc">Doc</h2>
-				<p>Check out the <a href="http://complexjs.github.io/complex-scripting/index.html">api</a>
-				or the <a href="https://github.com/complexjs/complex-scripting/wiki">wiki</a></p>
-				<h2 id="setup">Setup</h2>
-				<p>First we have to load the cxScriptSystem by adding it to the cxWorld instance
-				in the desired Scene.</p>
-				<p>In our scene:</p>
-				<pre><code class="language-js">    <span class="hljs-keyword">import</span> {ScriptSystem} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-scripting'</span>;
-
-    ...
-    load(){
-        <span class="hljs-keyword">this</span>.world.addSystem( <span class="hljs-keyword">new</span> ScriptSystem() );
-    }
-    ...</code></pre>
-				<p>Now we can create our custom Script. This is done by creating a new file.
-				For now we use <code>src/Scripts/MyCustomScript.js</code> and we add this:</p>
-				<pre><code class="language-js">    <span class="hljs-keyword">import</span> {Script} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-scripting'</span>;
-
-    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyCustomScript</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Script</span></span>{
-        onSetup(){
-            <span class="hljs-comment">// here we can setup all required data like access another component</span>
-            <span class="hljs-comment">//once the scriptcomponent is added to the entity</span>
-
-            <span class="hljs-keyword">this</span>.otherComponent = <span class="hljs-keyword">this</span>.entity.getComponents(MyOtherComponent)[<span class="hljs-number">0</span>];
-        }
-
-        update(){
-            <span class="hljs-comment">// here we execute modifications like rotate an object by accessing the corresponding component</span>
-
-            <span class="hljs-keyword">this</span>.otherComponent.object.rotation.x += <span class="hljs-number">0.01</span>;
-        }
-    }</code></pre>
-				<p>Now that we have our custom script we have to add the script to the entity.
-				This is done by creating a new cxScriptComponent and add out custom script to it.</p>
-				<p>In out scene:</p>
-				<pre><code class="language-js">    <span class="hljs-keyword">import</span> {Entity} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-engine'</span>;
-    <span class="hljs-keyword">import</span> {ScriptComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-scripting'</span>;
-    <span class="hljs-keyword">import</span> MyScript <span class="hljs-keyword">from</span> <span class="hljs-string">'./src/Scripts/MyCustomScript.js'</span>
-
-    ...
-
-    load() {
-        <span class="hljs-keyword">let</span> entity = <span class="hljs-keyword">new</span> cxEntity();
-        entity.addComponent( <span class="hljs-keyword">new</span> cxScriptComponent( <span class="hljs-keyword">new</span> MyScript() ) );
-        <span class="hljs-keyword">this</span>.world.addEntity( entity );
-    }
-
-     ...</code></pre>
-			</div>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/script.html" class="tsd-kind-icon">Script</a></li>
+								<li class="tsd-kind-class"><a href="classes/scriptcomponent.html" class="tsd-kind-icon">Script<wbr>Component</a></li>
+								<li class="tsd-kind-class"><a href="classes/scriptsystem.html" class="tsd-kind-icon">Script<wbr>System</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
+					<li class="globals current ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
