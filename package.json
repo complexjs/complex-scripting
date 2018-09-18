@@ -4,8 +4,8 @@
   "author": {
     "name": "Faebeee"
   },
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/bundle.js",
+  "types": "build/bundle.d.ts",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
     "engine",
