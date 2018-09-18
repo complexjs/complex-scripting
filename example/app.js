@@ -1,9 +1,10 @@
 class MyScript extends CxScripting.Script{
-    onSetup(){
+    onSetup() {
 
     }
 
-    update(){
+    update() {
+
     }
 }
 // This is our main entry point. In a scene we build the world. We attach all required systems to it. Add all managers
@@ -11,7 +12,6 @@ class MyScript extends CxScripting.Script{
 class MyScene extends cx.Scene {
     constructor() {
         super("MainScene");
-        this.canvas = document.getElementById('canvas');
     }
     // This method is called internally as soon as you call `Complex.loadScene`
     load() {

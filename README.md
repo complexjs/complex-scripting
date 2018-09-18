@@ -1,5 +1,7 @@
 # complex-scripting
-Module to enabled scripted behaviour to entities in the complex-engine
+Module to enabled scripted behaviour to entities in the complex-engine. This can be very useful 
+to avoid writing a lot of components and systems if you want to do only small tasks. One of those
+tasks could be advance the rotation of an object.
 
 ## install
 `npm install complex-scripting --save`
@@ -32,7 +34,7 @@ In our scene:
     import {ScriptSystem} from 'complex-scripting';
 
     ...
-    load(){
+    load() {
         this.world.addSystem( new ScriptSystem() );
     }
     ...
@@ -54,7 +56,6 @@ For now we use `src/Scripts/MyCustomScript.js` and we add this:
         
         update(){
             // here we execute modifications like rotate an object by accessing the corresponding component
-            
             this.otherComponent.object.rotation.x += 0.01;
         }
     }
@@ -62,21 +63,21 @@ For now we use `src/Scripts/MyCustomScript.js` and we add this:
    
    
 Now that we have our custom script we have to add the script to the entity.
-This is done by creating a new cxScriptComponent and add out custom script to it.
+This is done by creating a new `ScriptComponent` and add out custom script to it.
 
-In out scene:
+In our scene:
 
 
 ```js
     import {Entity} from 'complex-engine';
     import {ScriptComponent} from 'complex-scripting';
-    import MyScript from './src/Scripts/MyCustomScript.js'
+    import MyScript from './src/Scripts/MyCustomScript.js';
     
     ...
     
     load() {
-        let entity = new cxEntity();
-        entity.addComponent( new cxScriptComponent( new MyScript() ) );
+        let entity = new Entity();
+        entity.addComponent( new ScriptComponent( new MyScript() ) );
         this.world.addEntity( entity );
     }
      

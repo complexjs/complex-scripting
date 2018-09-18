@@ -65,12 +65,18 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="complex-scripting">complex-scripting</h1>
-				<p>Module to enabled scripted behaviour to entities in the complex-engine</p>
+				<p>Module to enabled scripted behaviour to entities in the complex-engine. This can be very useful
+					to avoid writing a lot of components and systems if you want to do only small tasks. One of those
+				tasks could be advance the rotation of an object.</p>
 				<h2 id="install">install</h2>
-				<p>npm install complex-scripting</p>
+				<p><code>npm install complex-scripting --save</code></p>
+				<p>With the npm installation all the classes will be exported as the are named.</p>
+				<p>If you use the bundeled version</p>
+				<pre><code><span class="hljs-symbol">https:</span><span class="hljs-comment">//unpkg.com/complex-scripting</span></code></pre><p>then you have all the classes in the exported namespace called  <code>CxScripting</code></p>
 				<h2 id="doc">Doc</h2>
-				<p>Check out the <a href="http://complexjs.github.io/complex-scripting/index.html">api</a>
-				or the <a href="https://github.com/complexjs/complex-scripting/wiki">wiki</a></p>
+				<p>Check out the <a href="http://complexjs.github.io/complex-scripting/index.html">api</a> </p>
+				<h2 id="example">Example</h2>
+				<p>Checkout the <a href="./example/app.js">Example</a></p>
 				<h2 id="setup">Setup</h2>
 				<p>First we have to load the cxScriptSystem by adding it to the cxWorld instance
 				in the desired Scene.</p>
@@ -78,7 +84,7 @@
 				<pre><code class="language-js">    <span class="hljs-keyword">import</span> {ScriptSystem} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-scripting'</span>;
 
     ...
-    load(){
+    load() {
         <span class="hljs-keyword">this</span>.world.addSystem( <span class="hljs-keyword">new</span> ScriptSystem() );
     }
     ...</code></pre>
@@ -96,22 +102,21 @@
 
         update(){
             <span class="hljs-comment">// here we execute modifications like rotate an object by accessing the corresponding component</span>
-
             <span class="hljs-keyword">this</span>.otherComponent.object.rotation.x += <span class="hljs-number">0.01</span>;
         }
     }</code></pre>
 				<p>Now that we have our custom script we have to add the script to the entity.
-				This is done by creating a new cxScriptComponent and add out custom script to it.</p>
-				<p>In out scene:</p>
+				This is done by creating a new <code>ScriptComponent</code> and add out custom script to it.</p>
+				<p>In our scene:</p>
 				<pre><code class="language-js">    <span class="hljs-keyword">import</span> {Entity} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-engine'</span>;
     <span class="hljs-keyword">import</span> {ScriptComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">'complex-scripting'</span>;
-    <span class="hljs-keyword">import</span> MyScript <span class="hljs-keyword">from</span> <span class="hljs-string">'./src/Scripts/MyCustomScript.js'</span>
+    <span class="hljs-keyword">import</span> MyScript <span class="hljs-keyword">from</span> <span class="hljs-string">'./src/Scripts/MyCustomScript.js'</span>;
 
     ...
 
     load() {
-        <span class="hljs-keyword">let</span> entity = <span class="hljs-keyword">new</span> cxEntity();
-        entity.addComponent( <span class="hljs-keyword">new</span> cxScriptComponent( <span class="hljs-keyword">new</span> MyScript() ) );
+        <span class="hljs-keyword">let</span> entity = <span class="hljs-keyword">new</span> Entity();
+        entity.addComponent( <span class="hljs-keyword">new</span> ScriptComponent( <span class="hljs-keyword">new</span> MyScript() ) );
         <span class="hljs-keyword">this</span>.world.addEntity( entity );
     }
 
