@@ -33,7 +33,7 @@
     "typescript-bundle": "^0.8.9"
   },
   "files": [
-    "./build/**/*"
+    "build/**/*"
   ],
   "engine": "^0.10.0"
 }
