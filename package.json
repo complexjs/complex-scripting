@@ -5,7 +5,7 @@
     "name": "Faebeee"
   },
   "main": "build/bundle.js",
-  "types": "build/bundle.d.ts",
+  "types": "build/index.d.ts",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
     "engine",
@@ -23,8 +23,7 @@
     "url": "https://github.com/complexjs/complex-scripting"
   },
   "scripts": {
-    "doc": "npx typedoc --out docs ./src --mode file --readme ./README.md --name CxScripting",
-    "bundle": "npx tsc-bundle --project ./tsconfig.json --importAs complex-engine=cx --exportAs CxScripting"
+    "doc": "npx typedoc --out docs ./src --mode file --readme ./README.md --name CxScripting"
   },
   "dependencies": {
     "complex-engine": "^6.0.0"

@@ -6,16 +6,6 @@ tasks could be advance the rotation of an object.
 ## install
 `npm install complex-scripting --save`
 
-With the npm installation all the classes will be exported as the are named.
-
-If you use the bundeled version
-
-    https://unpkg.com/complex-scripting
-
-then you have all the classes in the exported namespace called  `CxScripting`
-
-
-
 ## Doc
 
 Check out the [api](http://complexjs.github.io/complex-scripting/index.html) 
