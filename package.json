@@ -4,7 +4,7 @@
   "author": {
     "name": "Faebeee"
   },
-  "main": "build/bundle.js",
+  "main": "build/index.js",
   "types": "build/index.d.ts",
   "description": "Scriptingmodule for ComplexJS",
   "keywords": [
@@ -26,11 +26,10 @@
     "doc": "npx typedoc --out docs ./src --mode file --readme ./README.md --name CxScripting"
   },
   "dependencies": {
-    "complex-engine": "^6.0.0"
+    "complex-engine": "^6.0.2"
   },
   "devDependencies": {
-    "typedoc": "^0.12.0",
-    "typescript-bundle": "^0.8.9"
+    "typedoc": "^0.12.0"
   },
   "files": [
     "build/**/*"

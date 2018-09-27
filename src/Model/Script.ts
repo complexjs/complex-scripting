@@ -3,7 +3,6 @@ import {Entity, World} from 'complex-engine';
 export default abstract class Script {
     entity: Entity | null;
     world: World | null;
-    isSetUp: boolean = false;
 
     constructor() {
         this.entity = null;
@@ -13,12 +12,11 @@ export default abstract class Script {
     /**
      * called by the Scriptsystem when script is ready
      */
-    _setup(entity: Entity, world: World): void {
+    public setup(entity: Entity, world: World): void {
         this.entity = entity;
         this.world = world;
 
         this.onSetup();
-        this.isSetUp = true;
     }
 
     /**
@@ -30,5 +28,5 @@ export default abstract class Script {
     /**
      * Method can be implemented by user. Here you can handle all the operations for the entity the component is attached to.
      */
-    public abstract update(): void;
+	public abstract update(): void;
 }

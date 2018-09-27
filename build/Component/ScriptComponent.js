@@ -25,6 +25,12 @@ var ScriptComponent = /** @class */ (function (_super) {
     ScriptComponent.prototype.getScript = function () {
         return this.script;
     };
+    ScriptComponent.prototype.isSetup = function () {
+        return this.setup;
+    };
+    ScriptComponent.prototype.setSetup = function (setup) {
+        this.setup = setup;
+    };
     return ScriptComponent;
 }(complex_engine_1.Component));
 exports.default = ScriptComponent;

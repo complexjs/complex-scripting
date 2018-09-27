@@ -88,15 +88,14 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="script.html#entity" class="tsd-kind-icon">entity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="script.html#issetup" class="tsd-kind-icon">is<wbr>Set<wbr>Up</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="script.html#world" class="tsd-kind-icon">world</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="script.html#_setup" class="tsd-kind-icon">_setup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="script.html#onsetup" class="tsd-kind-icon">on<wbr>Setup</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="script.html#setup" class="tsd-kind-icon">setup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="script.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -115,7 +114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L6">Model/Script.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L5">Model/Script.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="script.html" class="tsd-signature-type">Script</a></h4>
@@ -131,17 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">entity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Entity</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L4">Model/Script.ts:4</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="issetup" class="tsd-anchor"></a>
-					<h3>is<wbr>Set<wbr>Up</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Set<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L6">Model/Script.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L4">Model/Script.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">world<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">World</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L5">Model/Script.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L5">Model/Script.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,16 +148,39 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="_setup" class="tsd-anchor"></a>
-					<h3>_setup</h3>
+					<a name="onsetup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> on<wbr>Setup</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">_setup<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Entity</span>, world<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">World</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Setup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L16">Model/Script.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L26">Model/Script.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Method the user can implement.
+									Called when script is ready.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setup" class="tsd-anchor"></a>
+					<h3>setup</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Entity</span>, world<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">World</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L15">Model/Script.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -190,29 +202,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="onsetup" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> on<wbr>Setup</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Setup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L28">Model/Script.ts:28</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Method the user can implement.
-									Called when script is ready.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="update" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -222,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/ef9517b/src/Model/Script.ts#L33">Model/Script.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/complexjs/complex-scripting/blob/a40d94b/src/Model/Script.ts#L31">Model/Script.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -258,16 +247,13 @@
 								<a href="script.html#entity" class="tsd-kind-icon">entity</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="script.html#issetup" class="tsd-kind-icon">is<wbr>Set<wbr>Up</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="script.html#world" class="tsd-kind-icon">world</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="script.html#_setup" class="tsd-kind-icon">_setup</a>
+								<a href="script.html#onsetup" class="tsd-kind-icon">on<wbr>Setup</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="script.html#onsetup" class="tsd-kind-icon">on<wbr>Setup</a>
+								<a href="script.html#setup" class="tsd-kind-icon">setup</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="script.html#update" class="tsd-kind-icon">update</a>

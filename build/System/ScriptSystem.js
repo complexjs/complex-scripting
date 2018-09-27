@@ -33,9 +33,9 @@ var ScriptSystem = /** @class */ (function (_super) {
         for (var i = 0; i < scriptComponents.length; i++) {
             var scriptComponent = scriptComponents[i];
             var script = scriptComponent.getScript();
-            if (scriptComponent.setup == false) {
-                script._setup(entity, this.world);
-                scriptComponent.setup = true;
+            if (scriptComponent.isSetup() == false) {
+                script.setup(entity, this.world);
+                scriptComponent.setSetup(true);
             }
             script.update();
         }

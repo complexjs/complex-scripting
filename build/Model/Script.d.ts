@@ -2,12 +2,11 @@ import { Entity, World } from 'complex-engine';
 export default abstract class Script {
     entity: Entity | null;
     world: World | null;
-    isSetUp: boolean;
     constructor();
     /**
      * called by the Scriptsystem when script is ready
      */
-    _setup(entity: Entity, world: World): void;
+    setup(entity: Entity, world: World): void;
     /**
      * Method the user can implement.
      * Called when script is ready.
