@@ -22,7 +22,7 @@ class ScriptSystem extends EntitySystem {
             let scriptComponent = scriptComponents[i];
             let script = scriptComponent.getScript();
 
-            if (scriptComponent.isSetup() == false) {
+            if (scriptComponent.isSetup() === false) {
                 script.setup(entity, this.world);
                 scriptComponent.setSetup(true);
             }

@@ -4,7 +4,7 @@
     "author": {
         "name": "Faebeee"
     },
-    "main": "dist/bundle.js",
+    "main": "index.js",
     "description": "Scriptingmodule for ComplexJS",
     "keywords": [
         "engine",
@@ -22,18 +22,13 @@
         "url": "https://github.com/complexjs/complex-scripting"
     },
     "scripts": {
-        "build": "npm run doc && npm run bundle",
-        "doc": "npx jsdoc -d docs src/**",
-        "bundle": "npx rollup -c"
+        "doc": "npx jsdoc -d docs src/**"
     },
     "dependencies": {
         "complex-engine": "^7.0.0"
     },
     "devDependencies": {
-        "jsdoc": "^3.6.3",
-        "@babel/core": "^7.4.5",
-        "rollup-plugin-babel": "^4.3.3",
-        "rollup-plugin-node-resolve": "^5.2.0"
+        "jsdoc": "^3.6.3"
     },
     "engine": "^0.10.0"
 }
