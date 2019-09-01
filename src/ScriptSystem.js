@@ -1,5 +1,5 @@
 import { Entity, EntitySystem } from 'complex-engine';
-import ScriptComponent from '../Component/ScriptComponent';
+import ScriptComponent from './ScriptComponent';
 
 class ScriptSystem extends EntitySystem {
     constructor() {

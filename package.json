@@ -22,7 +22,8 @@
         "url": "https://github.com/complexjs/complex-scripting"
     },
     "scripts": {
-        "doc": "npx jsdoc -d docs src/**/**",
+        "build": "npm run doc && npm run bundle",
+        "doc": "npx jsdoc -d docs src/**",
         "bundle": "npx rollup -c"
     },
     "dependencies": {

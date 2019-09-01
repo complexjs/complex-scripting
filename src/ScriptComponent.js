@@ -1,5 +1,5 @@
 import { Component } from "complex-engine";
-import Script from "../Model/Script";
+import Script from "./Script";
 
 class ScriptComponent extends Component {
     /**

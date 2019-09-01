@@ -66,27 +66,29 @@ function _possibleConstructorReturn(self, call) {
 
   return _assertThisInitialized(self);
 }
-
 /**
  * This is a bare Component.
  * It's used to store specific data related to an Entity. This data will then be processed by a cxSystem.
  */
+
+
 var Component = function Component() {
   _classCallCheck(this, Component);
 };
-
 /**
  * Abstract System. A System is responsible that your game works. It holds all the business logic and processes the
  * entities based on the data in the components
  */
+
 
 var System =
 /*#__PURE__*/
 function () {
   function System() {
     _classCallCheck(this, System);
-
     /**  @var {World | null} */
+
+
     this.world = null;
   }
   /**
@@ -127,10 +129,10 @@ function () {
 
   return System;
 }();
-
 /**
  * This systems renders only entities that match the required components.
  */
+
 
 var EntitySystem =
 /*#__PURE__*/
