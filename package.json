@@ -1,38 +1,38 @@
 {
-  "version": "6.2.0",
-  "name": "complex-scripting",
-  "author": {
-    "name": "Faebeee"
-  },
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "description": "Scriptingmodule for ComplexJS",
-  "keywords": [
-    "engine",
-    "game",
-    "gamedev",
-    "development",
-    "html5",
-    "gameengine",
-    "indie",
-    "component",
-    "entity",
-    "system"
-  ],
-  "repository": {
-    "url": "https://github.com/complexjs/complex-scripting"
-  },
-  "scripts": {
-    "doc": "npx typedoc --out docs ./src --mode file --readme ./README.md --name CxScripting"
-  },
-  "dependencies": {
-    "complex-engine": "^6.0.2"
-  },
-  "devDependencies": {
-    "typedoc": "^0.12.0"
-  },
-  "files": [
-    "build/**/*"
-  ],
-  "engine": "^0.10.0"
+    "version": "6.2.0",
+    "name": "complex-scripting",
+    "author": {
+        "name": "Faebeee"
+    },
+    "main": "dist/bundle.js",
+    "description": "Scriptingmodule for ComplexJS",
+    "keywords": [
+        "engine",
+        "game",
+        "gamedev",
+        "development",
+        "html5",
+        "gameengine",
+        "indie",
+        "component",
+        "entity",
+        "system"
+    ],
+    "repository": {
+        "url": "https://github.com/complexjs/complex-scripting"
+    },
+    "scripts": {
+        "doc": "npx jsdoc -d docs src/**/**",
+        "bundle": "npx rollup -c"
+    },
+    "dependencies": {
+        "complex-engine": "^7.0.0"
+    },
+    "devDependencies": {
+        "jsdoc": "^3.6.3",
+        "@babel/core": "^7.4.5",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-node-resolve": "^5.2.0"
+    },
+    "engine": "^0.10.0"
 }
