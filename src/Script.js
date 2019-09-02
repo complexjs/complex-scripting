@@ -1,5 +1,8 @@
 import { Entity, World } from 'complex-engine';
 
+/**
+ *
+ */
 class Script {
 
     constructor() {

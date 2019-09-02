@@ -1,16 +1,20 @@
 import { Component } from "complex-engine";
 import Script from "./Script";
 
+/**
+ *
+ */
 class ScriptComponent extends Component {
+
     /**
-     * 
-     * @param {Script} script 
+     *
+     * @param {Script} script
      */
     constructor(script) {
         super();
         /** @var {Script} */
         this.script = script;
-        
+
         /** @var {boolean} */
         this.setup = false;
     }
@@ -30,7 +34,7 @@ class ScriptComponent extends Component {
     }
 
     /**
-     * @param {boolean} setup 
+     * @param {boolean} setup
      */
     setSetup(setup) {
         this.setup = setup;

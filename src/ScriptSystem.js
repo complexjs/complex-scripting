@@ -1,7 +1,11 @@
 import { Entity, EntitySystem } from 'complex-engine';
 import ScriptComponent from './ScriptComponent';
 
+/**
+ *
+ */
 class ScriptSystem extends EntitySystem {
+
     constructor() {
         super();
         /** @var {Component[]} */
