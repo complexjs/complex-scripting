@@ -22,7 +22,7 @@
         "url": "https://github.com/complexjs/complex-scripting"
     },
     "scripts": {
-        "doc": "npx jsdoc -d docs src/**"
+        "doc": "npx jsdoc -d docs -R ./README.md src/**"
     },
     "dependencies": {
         "complex-engine": "^7.0.0"
